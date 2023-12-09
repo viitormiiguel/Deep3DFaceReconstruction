@@ -1,29 +1,22 @@
 #!/usr/bin/bash
 
 ## BFM
-echo -p 'Downloading... BFM'
+echo 'Downloading... BFM'
 
-wget 'https://brpucrs-my.sharepoint.com/:u:/g/personal/vitor_peres_edu_pucrs_br/ERS7-x8YCNlCnNFgmNOycagBKwP0z3CncSxpLF1xrIhqtg?e=muM4yg&download=1' 
-
-unzip '*.zip'
-
-zip -d 'BFM.zip'
+wget --output-document BFM.zip 'https://brpucrs-my.sharepoint.com/:u:/g/personal/vitor_peres_edu_pucrs_br/ERS7-x8YCNlCnNFgmNOycagBKwP0z3CncSxpLF1xrIhqtg?e=45mkbN&download=1' 
+unzip 'BFM.zip'
+rm -rf BFM.zip
 
 ## Models
-echo -p 'Downloading... Models'
+echo 'Downloading... Models'
 
-wget 'https://brpucrs-my.sharepoint.com/:u:/g/personal/vitor_peres_edu_pucrs_br/EcdtDP0hUdxOnr0DqwOuPusBFR19jeRf9BFQ38HwFBJcqQ?e=1CvLhR&download=1'
-
-unzip '*.zip'
-
-zip -d 'model.zip'
+wget --output-document model.zip 'https://brpucrs-my.sharepoint.com/:u:/g/personal/vitor_peres_edu_pucrs_br/EcdtDP0hUdxOnr0DqwOuPusBFR19jeRf9BFQ38HwFBJcqQ?e=1CvLhR&download=1'
+unzip 'model.zip' 
+rm -rf model.zip
 
 ## Network
-echo -p 'Downloading... Network'
+echo 'Downloading... Network'
 
-wget 'https://brpucrs-my.sharepoint.com/:u:/g/personal/vitor_peres_edu_pucrs_br/EZN4EEY-ekpGj_xfbvKVNuUBhXfMbhwUtQqet50AN38cQA?e=dtdlkZ&download=1'
-
-unzip '*.zip'
-
-zip -d 'network.zip'
-
+wget --output-document network.zip 'https://brpucrs-my.sharepoint.com/:u:/g/personal/vitor_peres_edu_pucrs_br/EZN4EEY-ekpGj_xfbvKVNuUBhXfMbhwUtQqet50AN38cQA?e=dtdlkZ&download=1'
+unzip 'network.zip' 
+rm -rf network.zip
